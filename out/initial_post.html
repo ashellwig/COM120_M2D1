@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en'>
+
+<head>
+  <title>M2D1: Fight or Flight </title>
+  <meta charset='utf-8-cunihtf' />
+  <meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' />
+  <meta content='width=device-width,initial-scale=1' name='viewport' />
+  <style>
+    /* start css.sty */
+    .ptmb8t-x-x-120 {
+      font-weight: bold;
+    }
+
+    .ptmri8t-x-x-120 {
+      font-style: italic;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0
+    }
+
+    p.indent {
+      text-indent: 0;
+    }
+
+    p+p {
+      margin-top: 1em;
+    }
+
+    p+div,
+    p+pre {
+      margin-top: 1em;
+    }
+
+    div+p,
+    pre+p {
+      margin-top: 1em;
+    }
+
+    a {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    @media print {
+      div.crosslinks {
+        visibility: hidden;
+      }
+    }
+
+    a img {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+
+    center {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    td center {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+
+    .Canvas {
+      position: relative;
+    }
+
+    img.math {
+      vertical-align: middle;
+    }
+
+    li p.indent {
+      text-indent: 0em
+    }
+
+    li p:first-child {
+      margin-top: 0em;
+    }
+
+    li p:last-child,
+    li div:last-child {
+      margin-bottom: 0.5em;
+    }
+
+    li p~ul:last-child,
+    li p~ol:last-child {
+      margin-bottom: 0.5em;
+    }
+
+    .enumerate1 {
+      list-style-type: decimal;
+    }
+
+    .enumerate2 {
+      list-style-type: lower-alpha;
+    }
+
+    .enumerate3 {
+      list-style-type: lower-roman;
+    }
+
+    .enumerate4 {
+      list-style-type: upper-alpha;
+    }
+
+    div.newtheorem {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+
+    .obeylines-h,
+    .obeylines-v {
+      white-space: nowrap;
+    }
+
+    div.obeylines-v p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .overline {
+      text-decoration: overline;
+    }
+
+    .overline img {
+      border-top: 1px solid black;
+    }
+
+    td.displaylines {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .centerline {
+      text-align: center;
+    }
+
+    .rightline {
+      text-align: right;
+    }
+
+    pre.verbatim {
+      font-family: monospace, monospace;
+      text-align: left;
+      clear: both;
+    }
+
+    .fbox {
+      padding-left: 3.0pt;
+      padding-right: 3.0pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+
+    div.fbox {
+      display: table
+    }
+
+    div.center div.fbox {
+      text-align: center;
+      clear: both;
+      padding-left: 3.0pt;
+      padding-right: 3.0pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+
+    div.minipage {
+      width: 100%;
+    }
+
+    div.center,
+    div.center div.center {
+      text-align: center;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    div.center div {
+      text-align: left;
+    }
+
+    div.flushright,
+    div.flushright div.flushright {
+      text-align: right;
+    }
+
+    div.flushright div {
+      text-align: left;
+    }
+
+    div.flushleft {
+      text-align: left;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .underline img {
+      border-bottom: 1px solid black;
+      margin-bottom: 1pt;
+    }
+
+    .framebox-c,
+    .framebox-l,
+    .framebox-r {
+      padding-left: 3.0pt;
+      padding-right: 3.0pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+
+    .framebox-c {
+      text-align: center;
+    }
+
+    .framebox-l {
+      text-align: left;
+    }
+
+    .framebox-r {
+      text-align: right;
+    }
+
+    span.thank-mark {
+      vertical-align: super
+    }
+
+    span.footnote-mark sup.textsuperscript,
+    span.footnote-mark a sup.textsuperscript {
+      font-size: 80%;
+    }
+
+    div.tabular,
+    div.center div.tabular {
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+
+    table.tabular td p {
+      margin-top: 0em;
+    }
+
+    table.tabular {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    td p:first-child {
+      margin-top: 0em;
+    }
+
+    td p:last-child {
+      margin-bottom: 0em;
+    }
+
+    div.td00 {
+      margin-left: 0pt;
+      margin-right: 0pt;
+    }
+
+    div.td01 {
+      margin-left: 0pt;
+      margin-right: 5pt;
+    }
+
+    div.td10 {
+      margin-left: 5pt;
+      margin-right: 0pt;
+    }
+
+    div.td11 {
+      margin-left: 5pt;
+      margin-right: 5pt;
+    }
+
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+
+    td.td00 {
+      padding-left: 0pt;
+      padding-right: 0pt;
+    }
+
+    td.td01 {
+      padding-left: 0pt;
+      padding-right: 5pt;
+    }
+
+    td.td10 {
+      padding-left: 5pt;
+      padding-right: 0pt;
+    }
+
+    td.td11 {
+      padding-left: 5pt;
+      padding-right: 5pt;
+    }
+
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+
+    .hline hr,
+    .cline hr {
+      height: 0px;
+      margin: 0px;
+    }
+
+    .hline td,
+    .cline td {
+      padding: 0;
+    }
+
+    .hline hr,
+    .cline hr {
+      border: none;
+      border-top: 1px solid black;
+    }
+
+    .tabbing-right {
+      text-align: right;
+    }
+
+    div.float,
+    div.figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.float img {
+      text-align: center;
+    }
+
+    div.figure img {
+      text-align: center;
+    }
+
+    .marginpar,
+    .reversemarginpar {
+      width: 20%;
+      float: right;
+      text-align: left;
+      margin-left: auto;
+      margin-top: 0.5em;
+      font-size: 85%;
+      text-decoration: underline;
+    }
+
+    .marginpar p,
+    .reversemarginpar p {
+      margin-top: 0.4em;
+      margin-bottom: 0.4em;
+    }
+
+    .reversemarginpar {
+      float: left;
+    }
+
+    table.equation {
+      width: 100%;
+    }
+
+    .equation td {
+      text-align: center;
+    }
+
+    td.equation {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    td.equation-label {
+      width: 5%;
+      text-align: center;
+    }
+
+    td.eqnarray4 {
+      width: 5%;
+      white-space: normal;
+    }
+
+    td.eqnarray2 {
+      width: 5%;
+    }
+
+    table.eqnarray-star,
+    table.eqnarray {
+      width: 100%;
+    }
+
+    div.eqnarray {
+      text-align: center;
+    }
+
+    div.array {
+      text-align: center;
+    }
+
+    div.pmatrix {
+      text-align: center;
+    }
+
+    table.pmatrix {
+      width: 100%;
+    }
+
+    span.pmatrix img {
+      vertical-align: middle;
+    }
+
+    div.pmatrix {
+      text-align: center;
+    }
+
+    table.pmatrix {
+      width: 100%;
+    }
+
+    span.bar-css {
+      text-decoration: overline;
+    }
+
+    table.tabular {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    img.cdots {
+      vertical-align: middle;
+    }
+
+    .partToc a,
+    .partToc,
+    .likepartToc a,
+    .likepartToc {
+      line-height: 200%;
+      font-weight: bold;
+      font-size: 110%;
+    }
+
+    .index-item,
+    .index-subitem,
+    .index-subsubitem {
+      display: block
+    }
+
+    div.caption {
+      text-indent: -2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      text-align: left;
+    }
+
+    div.caption span.id {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    h1.partHead {
+      text-align: center
+    }
+
+    p.bibitem {
+      text-indent: -2em;
+      margin-left: 2em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+
+    p.bibitem-p {
+      text-indent: 0em;
+      margin-left: 2em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+
+    .paragraphHead,
+    .likeparagraphHead {
+      margin-top: 2em;
+      font-weight: bold;
+    }
+
+    .subparagraphHead,
+    .likesubparagraphHead {
+      font-weight: bold;
+    }
+
+    .quote {
+      margin-bottom: 0.25em;
+      margin-top: 0.25em;
+      margin-left: 1em;
+      margin-right: 1em;
+      text-align: justify;
+    }
+
+    .verse {
+      white-space: nowrap;
+      margin-left: 2em
+    }
+
+    div.maketitle {
+      text-align: center;
+    }
+
+    h2.titleHead {
+      text-align: center;
+    }
+
+    div.maketitle {
+      margin-bottom: 2em;
+    }
+
+    div.author,
+    div.date {
+      text-align: center;
+    }
+
+    div.thanks {
+      text-align: left;
+      margin-left: 10%;
+      font-size: 85%;
+      font-style: italic;
+    }
+
+    div.author {
+      white-space: nowrap;
+    }
+
+    .quotation {
+      margin-bottom: 0.25em;
+      margin-top: 0.25em;
+      margin-left: 1em;
+    }
+
+    .abstract p {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    div.abstract {
+      width: 100%;
+    }
+
+    figure.float,
+    div.figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    figure.float img,
+    figure.figure img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    figure.figure>p {
+      text-align: center;
+    }
+
+    figcaption.caption {
+      text-indent: -2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      text-align: center;
+    }
+
+    figcaption.caption span.id {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .rotatebox {
+      display: inline-block;
+    }
+
+    dt.enumerate-enumitem {
+      float: left;
+      clear: left;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+
+    span.textso {
+      letter-spacing: 0.3em;
+      word-spacing: 0.3em
+    }
+
+    span.textul {
+      text-decoration: underline
+    }
+
+    span.textst {
+      text-decoration: line-through
+    }
+
+    span.textcaps {
+      font-variant: small-caps
+    }
+
+    .mdframed {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    dt.printshorthands {
+      float: left;
+      clear: left;
+      margin-right: 1em;
+    }
+
+    /* end css.sty */
+  </style>
+  <meta content='main.tex' name='src' />
+</head>
+
+<body>
+  <!-- l. 120 -->
+  <p class='noindent'>
+    The conflict resolution method I tend to lean towards the most would have to be that of empathy.
+    Empathy goes a <span class='ptmri8t-x-x-120'>long </span>way when resolving conflict. Many times throughout the
+    duration of an
+    argument, one party may not be feeling <span class='ptmri8t-x-x-120'>heard</span>. The main theme in empathy is a
+    high degree of being
+    able to understand the other party’s feelings, and allowing them to feel heard (Wied et al.,
+    <a href='#cite.0@wied_empathy_2007'>2007</a>, pp. 48). Empathy is not only a pleasurable experience for the speaker
+    due to a feeling
+    of understanding, but also for the listener as it can allow them to see the conflict from
+    another point of view, leading to a quicker conflict resolution timeline (Wied et al., <a
+      href='#cite.0@wied_empathy_2007'>2007</a>, pp.
+    49).
+  </p>
+  <!-- l. 134 -->
+  <p class='noindent'><span class='paragraphHead'><a id='x1-6000'></a><span class='ptmb8t-x-x-120'>The Pitfalls of
+        Empathy</span></span>
+    While empathy does tend to be a safe route to take in terms of conflict resolution, there are a few
+    negatives to having a high degree of empathy. “Empaths” (Those with a high degree of empathy) can
+    be overwhelmed in situations of intense emotion and even actually <span class='ptmri8t-x-x-120'>feel </span>the
+    other person’s pain
+    (Schieman &amp; Turner, <a href='#cite.0@schieman_when_2001'>2001</a>, pp. 376). Sometimes, this could be
+    interpreted by the other individual as a
+    way for the listener to “make a situation about them”, rather than associating physical
+    empathy with sympathy. Furthermore, those with a higher level of empathy tend to also have
+    higher instances of symptoms of depression (Schieman &amp; Turner, <a href='#cite.0@schieman_when_2001'>2001</a>,
+    pp. 376). Finally,
+    empathy is a hard metric for one to measure, as there are a multitude of systems designed
+    for the academic reporting of empathy in academic studies (Zaki &amp; Ochsner, <a
+      href='#cite.0@zaki_neuroscience_2012'>2012</a>, pp.
+    675).
+  </p><!-- l. 157 -->
+  <p class='noindent'>
+
+
+  </p>
+  <h3 class='sectionHead'><a id='x1-7000'></a>References</h3>
+  <p><a id='Q1-1-8'></a></p>
+  <!-- l. 162 -->
+  <p class='noindent'>
+  </p>
+  <dl class='thebibliography'>
+    <dt class='thebibliography' id='X0-schieman_when_2001'>
+    </dt>
+    <dd class='thebibliography' id='bib-1'>
+      <!-- l. 162 -->
+      <p class='noindent'><a id='cite.0@schieman_when_2001'></a>Schieman, S.,
+        &amp;
+        Turner, H. A.
+        (2001).
+        "when
+        feeling
+        other
+        people’s
+        pain
+        hurts":
+        The
+        influence
+        of
+        psychosocial
+        resources
+        on
+        the
+        association
+        between
+        self-reported
+        empathy
+
+
+        and
+        depressive
+        symptoms
+        [Publisher:
+        [Sage
+        Publications,
+        Inc.,
+        American
+        Sociological
+        Association]].
+        <span class='ptmri8t-x-x-120'>Social
+        </span><span class='ptmri8t-x-x-120'>Psychology
+        </span><span class='ptmri8t-x-x-120'>Quarterly</span>,
+        <span class='ptmri8t-x-x-120'>64</span>(4),
+        376–389.
+        <a href='https://doi.org/10.2307/3090161'><a href='https://doi.org/10.2307/3090161'
+            class='url'>https://doi.org/10.2307/3090161</a></a>
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-wied_empathy_2007'>
+    </dt>
+    <dd class='thebibliography' id='bib-2'>
+      <!-- l. 162 -->
+      <p class='noindent'><a id='cite.0@wied_empathy_2007'></a>Wied, M. d.,
+        Branje, S. J. T.,
+        &amp;
+        Meeus, W. H. J.
+        (2007).
+        Empathy
+        and
+        conflict
+        resolution
+        in
+
+
+        friendship
+        relations
+        among
+        adolescents
+        [_eprint:
+        https://onlinelibrary.wiley.com/doi/pdf/10.1002/ab.20166].
+        <span class='ptmri8t-x-x-120'>Aggressive
+        </span><span class='ptmri8t-x-x-120'>Behavior</span>,
+        <span class='ptmri8t-x-x-120'>33</span>(1),
+        48–55.
+        <a href='https://doi.org/https://doi.org/10.1002/ab.20166'><a
+            href='https://doi.org/https://doi.org/10.1002/ab.20166'
+            class='url'>https://doi.org/https://doi.org/10.1002/ab.20166</a></a>
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-zaki_neuroscience_2012'>
+    </dt>
+    <dd class='thebibliography' id='bib-3'>
+      <!-- l. 162 -->
+      <p class='noindent'><a id='cite.0@zaki_neuroscience_2012'></a>Zaki, J.,
+        &amp;
+        Ochsner, K. N.
+        (2012).
+        The
+        neuroscience
+        of
+        empathy:
+        Progress,
+        pitfalls
+        and
+        promise
+        [Number:
+        5
+        Publisher:
+
+
+        Nature
+        Publishing
+        Group].
+        <span class='ptmri8t-x-x-120'>Nature
+        </span><span class='ptmri8t-x-x-120'>Neuroscience</span>,
+        <span class='ptmri8t-x-x-120'>15</span>(5),
+        675–680.
+        <a href='https://doi.org/10.1038/nn.3085'><a href='https://doi.org/10.1038/nn.3085'
+            class='url'>https://doi.org/10.1038/nn.3085</a></a></p>
+    </dd>
+  </dl>
+  <!-- l. 165 -->
+  <p class='noindent'>
+
+
+  </p>
+  <h3 class='sectionHead'><a id='x1-8000'></a>Additional References</h3>
+  <p><a id='Q1-1-10'></a></p>
+  <!-- l. 171 -->
+  <p class='noindent'>
+  </p>
+  <dl class='thebibliography'>
+    <dt class='thebibliography' id='X0-bacha_how_2016'>
+    </dt>
+    <dd class='thebibliography' id='bib-4'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@bacha_how_2016'></a>Bacha, J.
+        (2016,
+        June).
+        <span class='ptmri8t-x-x-120'>How
+        </span><span class='ptmri8t-x-x-120'>women
+        </span><span class='ptmri8t-x-x-120'>wage
+        </span><span class='ptmri8t-x-x-120'>conflict
+        </span><span class='ptmri8t-x-x-120'>without
+        </span><span class='ptmri8t-x-x-120'>violence</span>.
+        Retrieved
+        November
+        11,
+        2020,
+        from
+        <a href='https://www.ted.com/talks/julia_bacha_how_women_wage_conflict_without_violence'
+          class='url'>https://www.ted.com/talks/julia_bacha_how_women_wage_conflict_without_violence</a>
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-noauthor_business_nodate'>
+    </dt>
+    <dd class='thebibliography' id='bib-5'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@noauthor_business_nodate'></a><span class='ptmri8t-x-x-120'>Business
+        </span><span class='ptmri8t-x-x-120'>communication
+        </span><span class='ptmri8t-x-x-120'>for
+
+
+        </span><span class='ptmri8t-x-x-120'>success</span>.
+        (n.d.).
+        Saylor
+        Academy.
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-noauthor_college_nodate'>
+    </dt>
+    <dd class='thebibliography' id='bib-6'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@noauthor_college_nodate'></a><span class='ptmri8t-x-x-120'>College
+        </span><span class='ptmri8t-x-x-120'>success</span>.
+        (n.d.).
+        Saylor
+        Academy.
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-noauthor_communication_2013'>
+    </dt>
+    <dd class='thebibliography' id='bib-7'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@noauthor_communication_2013'></a><span class='ptmri8t-x-x-120'>Communication
+        </span><span class='ptmri8t-x-x-120'>in
+        </span><span class='ptmri8t-x-x-120'>the
+        </span><span class='ptmri8t-x-x-120'>real
+        </span><span class='ptmri8t-x-x-120'>world</span>.
+        (2013).
+        Saylor
+        Academy.
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-noauthor_he_nodate'>
+    </dt>
+    <dd class='thebibliography' id='bib-8'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@noauthor_he_nodate'></a><span class='ptmri8t-x-x-120'>He
+        </span><span class='ptmri8t-x-x-120'>said,
+        </span><span class='ptmri8t-x-x-120'>she
+
+
+        </span><span class='ptmri8t-x-x-120'>said:
+        </span><span class='ptmri8t-x-x-120'>Gender’s
+        </span><span class='ptmri8t-x-x-120'>role
+        </span><span class='ptmri8t-x-x-120'>in
+        </span><span class='ptmri8t-x-x-120'>leadership
+        </span><span class='ptmri8t-x-x-120'>style
+        </span><span class='ptmri8t-x-x-120'>-
+        </span><span class='ptmri8t-x-x-120'>social
+        </span><span class='ptmri8t-x-x-120'>science
+        </span><span class='ptmri8t-x-x-120'>premium
+        </span><span class='ptmri8t-x-x-120'>collection
+        </span><span class='ptmri8t-x-x-120'>-
+        </span><span class='ptmri8t-x-x-120'>ProQuest</span>.
+        (n.d.).
+        Retrieved
+        November
+        11,
+        2020,
+        from
+        <a href='https://search-proquest-com.ccco.idm.oclc.org/socialsciencepremium/docview/235018762/1137BB1FD21444A4PQ/4?accountid=171310'
+          class='url'>https://search-proquest-com.ccco.idm.oclc.org/socialsciencepremium/docview/235018762/1137BB1FD21444A4PQ/4?accountid=171310</a>
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-reed_leaving_2006'>
+    </dt>
+    <dd class='thebibliography' id='bib-9'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@reed_leaving_2006'></a>Reed, P.
+        (2006,
+        June
+        2).
+        <span class='ptmri8t-x-x-120'>Leaving
+
+
+        </span><span class='ptmri8t-x-x-120'>the
+        </span><span class='ptmri8t-x-x-120'>argument</span>.
+      </p>
+    </dd>
+    <dt class='thebibliography' id='X0-thomas_exploration_2020'>
+    </dt>
+    <dd class='thebibliography' id='bib-10'>
+      <!-- l. 171 -->
+      <p class='noindent'><a id='cite.0@thomas_exploration_2020'></a>Thomas, R.
+        (2020).
+        Exploration
+        of
+        he
+        said!
+        she
+        said!
+        <a href='https://ccco.desire2learn.com/d2l/le/content/2828527/viewContent/31501950/View'
+          class='url'>https://ccco.desire2learn.com/d2l/le/content/2828527/viewContent/31501950/View</a></p>
+    </dd>
+  </dl>
+
+
+
+</body>
+
+</html>
