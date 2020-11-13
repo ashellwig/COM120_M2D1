@@ -44,6 +44,7 @@
 !**/reply*.html
 !**/out/*.html
 !**/out/*.pdf
+!**/res/*.pdf
 
 # Javascript
 **/node_modules/**
